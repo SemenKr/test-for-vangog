@@ -1,0 +1,7 @@
+@import "./layouts/wrapper.css";
+@import "./layouts/global.css";
+
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./main/main.css";
+@import "./components/card.css";
