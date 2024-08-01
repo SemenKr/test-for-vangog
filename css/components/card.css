@@ -49,7 +49,7 @@
   border: none;
   padding: 13px;
   position: absolute;
-  top: 409px;
+  bottom: 20px;
   left: 32px;
   right: 32px;
   transition: opacity 0.3s ease-in-out;
@@ -127,4 +127,10 @@
 .card__old-prise span {
   font-weight: 600;
   text-decoration: line-through;
+}
+
+@media (max-width: 1024px) {
+  .card__image::before {
+    padding-bottom: calc(468 / 320 * 100%);
+  }
 }

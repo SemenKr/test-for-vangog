@@ -1,7 +1,12 @@
 {
 	"cSpell.words": [
+		"Сведодиодный",
+		"adress",
 		"focusable",
+		"korataki",
 		"Korataki",
-		"Markt"
-	]
+		"Markt",
+		"recaptcha"
+	],
+	"npm-scripts.showStartNotification": false
 }
