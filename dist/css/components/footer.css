@@ -1,0 +1,288 @@
+.footer {
+  background: #0c0c0c;
+  color: #ffffff;
+  padding-top: 61px;
+  padding-bottom: 60px;
+}
+
+.footer .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.footer__logo {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.footer__logo img {
+  width: 239px;
+  height: 62px;
+}
+
+.footer__recaptcha-notice {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #808080;
+  grid-row: 2;
+  grid-column: 1;
+  margin-top: 50px;
+}
+
+.footer__recaptcha-notice a {
+  color: #808080;
+}
+
+.footer__adress {
+  grid-row: 1;
+  grid-column: 2;
+  margin-left: 77px;
+}
+
+.footer__adress h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer__adress p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.footer__contacts {
+  grid-row: 2;
+  grid-column: 2;
+  margin-left: 77px;
+  margin-top: 36px;
+}
+
+.footer__contacts h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.footer__contacts p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #f5f5f5;
+  margin: 0;
+}
+
+.footer__contacts p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer__contacts a {
+  color: #f5f5f5;
+  text-decoration: none;
+}
+
+.footer__services {
+  grid-row: span 2;
+  grid-column: 3;
+  margin-left: 34%;
+}
+
+.footer__services h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  color: #fff;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.footer__services ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer__services li {
+  list-style: none;
+}
+
+.footer__services a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #f5f5f5;
+}
+
+.footer__info {
+  grid-row: 1;
+  grid-column: 4;
+}
+
+.footer__info ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-self: right;
+  gap: 20px;
+}
+
+.footer__info li {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer__info a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #808080;
+  text-decoration: none;
+}
+
+.footer__pay {
+  grid-row: 2;
+  grid-column: 4;
+  justify-self: end;
+  align-self: end;
+  margin-bottom: 29px;
+}
+
+.footer__pay ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 33px;
+}
+
+.footer__pay li {
+  list-style: none;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer .container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    column-gap: 0;
+  }
+
+  .footer__logo {
+    grid-row: 1;
+    grid-column: 1/4;
+  }
+
+  .footer__logo img {
+    width: 180px;
+    height: 47px;
+  }
+
+  .footer__recaptcha-notice {
+    grid-row: 4/5;
+    grid-column: 2/4;
+    margin-left: 55px;
+    margin-top: 36px;
+  }
+
+  .footer__adress {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    margin-left: 0;
+    margin-top: 33px;
+  }
+
+  .footer__contacts {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    margin-left: 8px;
+    margin-top: 34px;
+  }
+
+  .footer__services {
+    grid-row: 2/4;
+    grid-column: 3/4;
+    margin-left: 10px;
+    margin-bottom: 0;
+    margin-top: 33px;
+  }
+
+  .footer__services ul {
+    gap: 24px;
+  }
+
+  .footer__info {
+    grid-row: 3/4;
+    grid-column: 1/2;
+  }
+
+  .footer__pay {
+    grid-row: 4/5;
+    grid-column: 1/2;
+    justify-self: start;
+    margin-bottom: 14px;
+    margin-left: 10px;
+  }
+
+  .footer__info li {
+    justify-content: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer__logo {
+    order: 1;
+  }
+
+  .footer__recaptcha-notice {
+    order: 7;
+    margin: 0;
+  }
+
+  .footer__adress {
+    order: 2;
+    margin: 0;
+  }
+
+  .footer__contacts {
+    order: 3;
+    margin: 0;
+  }
+
+  .footer__services {
+    order: 4;
+    margin: 0;
+  }
+
+  .footer__info {
+    order: 5;
+    margin: 0;
+  }
+
+  .footer__pay {
+    order: 6;
+    margin: 0;
+    align-self: flex-start;
+  }
+}

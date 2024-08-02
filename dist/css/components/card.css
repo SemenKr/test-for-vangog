@@ -1,0 +1,136 @@
+.card {
+  overflow: hidden;
+  display: grid;
+  position: relative;
+}
+
+.card__image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.card__image::before {
+  content: "";
+  display: block;
+  padding-bottom: calc(477 / 320 * 100%); /* тут подбирается %, чтобы соответствовать нужным пропорциям картинки */
+}
+
+.card__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 140%;
+  margin: 0;
+  grid-row: 2;
+  margin-bottom: 12px;
+}
+
+.card__details {
+  display: none;
+  border-radius: 100px;
+  padding: 0px 48px;
+  align-items: center;
+  justify-content: center;
+  background: #e45302;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  border: none;
+  padding: 13px;
+  position: absolute;
+  bottom: 20px;
+  left: 32px;
+  right: 32px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card__details:hover {
+  opacity: 0.7;
+}
+
+.card__details:active {
+  opacity: 0.3;
+}
+
+.card--details .card__details {
+  display: flex;
+}
+
+.card--promotion .card__promotion {
+  display: flex;
+}
+
+.card__promotion {
+  padding: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #fff;
+  background: #231815;
+  border-radius: 100px;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  width: 40%;
+  border: none;
+  display: none;
+  position: absolute;
+  top: 10px;
+  left: 11px;
+}
+
+.card__promotion:hover {
+  opacity: 0.7;
+}
+
+.card__promotion:active {
+  opacity: 0.3;
+}
+
+.card__prise-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.card__prise-wrapper span {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 140%;
+}
+
+.card__prise-wrapper b {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 140%;
+}
+
+.card__new-prise {
+  color: #e45302;
+}
+
+.card__old-prise {
+  font-weight: 600;
+  color: #808080;
+}
+
+.card__old-prise span {
+  font-weight: 600;
+  text-decoration: line-through;
+}
+
+@media (max-width: 1024px) {
+  .card__image::before {
+    padding-bottom: calc(468 / 320 * 100%);
+  }
+}
