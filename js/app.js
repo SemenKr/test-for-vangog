@@ -1,4 +1,4 @@
-const {default: initMenu} = require('./vendor/menu');
+import initMenu from './vendor/menu.js'
 
 
 document.addEventListener("DOMContentLoaded", () => {
